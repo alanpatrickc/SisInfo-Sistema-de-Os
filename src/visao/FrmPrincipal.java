@@ -39,33 +39,41 @@ public class FrmPrincipal extends javax.swing.JFrame {
         desktopPane = new javax.swing.JDesktopPane();
         jPanel1 = new javax.swing.JPanel();
         jToolBar1 = new javax.swing.JToolBar();
-        jButton1 = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JToolBar.Separator();
+        jButton1 = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JToolBar.Separator();
         jButton2 = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JToolBar.Separator();
         jButton3 = new javax.swing.JButton();
         jSeparator4 = new javax.swing.JToolBar.Separator();
+        jButton5 = new javax.swing.JButton();
+        jSeparator5 = new javax.swing.JToolBar.Separator();
         jButton4 = new javax.swing.JButton();
-        jSeparator1 = new javax.swing.JToolBar.Separator();
         menuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         openMenuCadastrarClientes = new javax.swing.JMenuItem();
         jMenuCadastrarOs = new javax.swing.JMenuItem();
         jMenuCadastrarServico = new javax.swing.JMenuItem();
         exitMenuItem = new javax.swing.JMenuItem();
-        editMenu = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
         cutMenuItem = new javax.swing.JMenuItem();
+        editMenu = new javax.swing.JMenu();
         copyMenuItem = new javax.swing.JMenuItem();
         pasteMenuItem = new javax.swing.JMenuItem();
         deleteMenuItem = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
         helpMenu = new javax.swing.JMenu();
         contentMenuItem = new javax.swing.JMenuItem();
         aboutMenuItem = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("SisInfo - Sistema para Controle de OS");
         setBackground(new java.awt.Color(255, 255, 255));
+        setExtendedState(6);
         setFocusCycleRoot(false);
         setName("Sistema de OS"); // NOI18N
 
@@ -77,13 +85,20 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jToolBar1.setRollover(true);
         jToolBar1.setAlignmentX(0.0F);
 
+        jSeparator3.setBackground(new java.awt.Color(102, 102, 102));
+        jSeparator3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jSeparator3.setMaximumSize(new java.awt.Dimension(1, 70));
+        jSeparator3.setMinimumSize(new java.awt.Dimension(1, 70));
+        jSeparator3.setPreferredSize(new java.awt.Dimension(1, 70));
+        jSeparator3.setSeparatorSize(new java.awt.Dimension(1, 70));
+        jToolBar1.add(jSeparator3);
+
         jButton1.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/agt_family.png"))); // NOI18N
         jButton1.setText("Cliente");
         jButton1.setToolTipText("Cliente");
         jButton1.setAlignmentX(0.5F);
         jButton1.setAutoscrolls(true);
-        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jButton1.setFocusable(false);
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton1.setIconTextGap(2);
@@ -98,14 +113,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
             }
         });
         jToolBar1.add(jButton1);
-
-        jSeparator3.setBackground(new java.awt.Color(102, 102, 102));
-        jSeparator3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jSeparator3.setMaximumSize(new java.awt.Dimension(1, 70));
-        jSeparator3.setMinimumSize(new java.awt.Dimension(1, 70));
-        jSeparator3.setPreferredSize(new java.awt.Dimension(1, 70));
-        jSeparator3.setSeparatorSize(new java.awt.Dimension(1, 70));
-        jToolBar1.add(jSeparator3);
+        jToolBar1.add(jSeparator1);
 
         jButton2.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/configure.png"))); // NOI18N
@@ -125,13 +133,6 @@ public class FrmPrincipal extends javax.swing.JFrame {
             }
         });
         jToolBar1.add(jButton2);
-
-        jSeparator2.setBackground(new java.awt.Color(102, 102, 102));
-        jSeparator2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jSeparator2.setMaximumSize(new java.awt.Dimension(1, 70));
-        jSeparator2.setMinimumSize(new java.awt.Dimension(1, 70));
-        jSeparator2.setPreferredSize(new java.awt.Dimension(1, 70));
-        jSeparator2.setSeparatorSize(new java.awt.Dimension(1, 70));
         jToolBar1.add(jSeparator2);
 
         jButton3.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
@@ -152,14 +153,16 @@ public class FrmPrincipal extends javax.swing.JFrame {
             }
         });
         jToolBar1.add(jButton3);
-
-        jSeparator4.setBackground(new java.awt.Color(102, 102, 102));
-        jSeparator4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jSeparator4.setMaximumSize(new java.awt.Dimension(1, 70));
-        jSeparator4.setMinimumSize(new java.awt.Dimension(1, 70));
-        jSeparator4.setPreferredSize(new java.awt.Dimension(1, 70));
-        jSeparator4.setSeparatorSize(new java.awt.Dimension(1, 70));
         jToolBar1.add(jSeparator4);
+
+        jButton5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/iconfinder_system-users_118828.png"))); // NOI18N
+        jButton5.setText("Usuarios");
+        jButton5.setFocusable(false);
+        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton5);
+        jToolBar1.add(jSeparator5);
 
         jButton4.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/database.png"))); // NOI18N
@@ -178,14 +181,6 @@ public class FrmPrincipal extends javax.swing.JFrame {
             }
         });
         jToolBar1.add(jButton4);
-
-        jSeparator1.setBackground(new java.awt.Color(102, 102, 102));
-        jSeparator1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jSeparator1.setMaximumSize(new java.awt.Dimension(1, 70));
-        jSeparator1.setMinimumSize(new java.awt.Dimension(1, 70));
-        jSeparator1.setPreferredSize(new java.awt.Dimension(1, 70));
-        jSeparator1.setSeparatorSize(new java.awt.Dimension(1, 70));
-        jToolBar1.add(jSeparator1);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -210,16 +205,21 @@ public class FrmPrincipal extends javax.swing.JFrame {
             desktopPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(desktopPaneLayout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 457, Short.MAX_VALUE))
+                .addGap(0, 421, Short.MAX_VALUE))
         );
 
         menuBar.setBorder(null);
 
+        fileMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/iconfinder_product-sales-report_49607.png"))); // NOI18N
         fileMenu.setMnemonic('f');
-        fileMenu.setText("Cadastro");
+        fileMenu.setText("CADASTRO");
+        fileMenu.setToolTipText("");
+        fileMenu.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
+        openMenuCadastrarClientes.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        openMenuCadastrarClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/iconfinder_Client_Male_Light_80824 (1).png"))); // NOI18N
         openMenuCadastrarClientes.setMnemonic('o');
-        openMenuCadastrarClientes.setText("Cadastro de Cliente");
+        openMenuCadastrarClientes.setText("CADASTRO DE CLIENTE");
         openMenuCadastrarClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 openMenuCadastrarClientesActionPerformed(evt);
@@ -227,7 +227,9 @@ public class FrmPrincipal extends javax.swing.JFrame {
         });
         fileMenu.add(openMenuCadastrarClientes);
 
-        jMenuCadastrarOs.setText("Cadastro de OS");
+        jMenuCadastrarOs.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jMenuCadastrarOs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/configure.png"))); // NOI18N
+        jMenuCadastrarOs.setText("CADASTRO DE OS");
         jMenuCadastrarOs.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuCadastrarOsActionPerformed(evt);
@@ -235,7 +237,9 @@ public class FrmPrincipal extends javax.swing.JFrame {
         });
         fileMenu.add(jMenuCadastrarOs);
 
-        jMenuCadastrarServico.setText("Cadastro de Serviço");
+        jMenuCadastrarServico.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jMenuCadastrarServico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/iconfinder_Application_46710.png"))); // NOI18N
+        jMenuCadastrarServico.setText("CADASTRO DE SERVIÇO");
         jMenuCadastrarServico.setActionCommand("");
         jMenuCadastrarServico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -244,8 +248,10 @@ public class FrmPrincipal extends javax.swing.JFrame {
         });
         fileMenu.add(jMenuCadastrarServico);
 
+        exitMenuItem.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        exitMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/iconfinder_system-users_118828.png"))); // NOI18N
         exitMenuItem.setMnemonic('x');
-        exitMenuItem.setText("Sair");
+        exitMenuItem.setText("CADASTRO DE USUARIO");
         exitMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 exitMenuItemActionPerformed(evt);
@@ -253,46 +259,82 @@ public class FrmPrincipal extends javax.swing.JFrame {
         });
         fileMenu.add(exitMenuItem);
 
-        menuBar.add(fileMenu);
-
-        editMenu.setMnemonic('e');
-        editMenu.setText("OS");
+        jMenuItem1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/iconfinder_Cancel_1493282.png"))); // NOI18N
+        jMenuItem1.setText("SAIR");
+        fileMenu.add(jMenuItem1);
 
         cutMenuItem.setMnemonic('t');
         cutMenuItem.setText("Cut");
-        editMenu.add(cutMenuItem);
+        fileMenu.add(cutMenuItem);
 
+        menuBar.add(fileMenu);
+
+        editMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/iconfinder_thefreeforty_register_1243707.png"))); // NOI18N
+        editMenu.setMnemonic('e');
+        editMenu.setText("CONSULTAR");
+        editMenu.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+
+        copyMenuItem.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        copyMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/iconfinder_Client_Male_Light_80824 (1).png"))); // NOI18N
         copyMenuItem.setMnemonic('y');
-        copyMenuItem.setText("Copy");
+        copyMenuItem.setText("CONSULTAR CLIENTE");
         editMenu.add(copyMenuItem);
 
+        pasteMenuItem.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        pasteMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/configure.png"))); // NOI18N
         pasteMenuItem.setMnemonic('p');
-        pasteMenuItem.setText("Paste");
+        pasteMenuItem.setText("CONSULTAR OS");
         editMenu.add(pasteMenuItem);
 
+        deleteMenuItem.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        deleteMenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/iconfinder_Application_46710.png"))); // NOI18N
         deleteMenuItem.setMnemonic('d');
-        deleteMenuItem.setText("Delete");
+        deleteMenuItem.setText("CONSULTAR SERVIÇOS");
         editMenu.add(deleteMenuItem);
+
+        jMenuItem2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/iconfinder_system-users_118828.png"))); // NOI18N
+        jMenuItem2.setText("CONSULTAR USUARIOS");
+        editMenu.add(jMenuItem2);
 
         menuBar.add(editMenu);
 
+        helpMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/iconfinder_clipboard-note-register-shipping-files_3828104.png"))); // NOI18N
         helpMenu.setMnemonic('h');
-        helpMenu.setText("Ferramentas");
+        helpMenu.setText("RELATÓRIOS");
+        helpMenu.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
+        contentMenuItem.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         contentMenuItem.setMnemonic('c');
-        contentMenuItem.setText("Contents");
+        contentMenuItem.setText("RELATÓRIO DE CLIENTE");
         helpMenu.add(contentMenuItem);
 
+        aboutMenuItem.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         aboutMenuItem.setMnemonic('a');
-        aboutMenuItem.setText("About");
+        aboutMenuItem.setText("RELATÓRIO DE OS");
         helpMenu.add(aboutMenuItem);
 
         menuBar.add(helpMenu);
 
-        jMenu1.setText("Ajuda");
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/database.png"))); // NOI18N
+        jMenu1.setText("BACKUP");
+        jMenu1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+
+        jMenuItem3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jMenuItem3.setText("FAZER BACKUP");
+        jMenu1.add(jMenuItem3);
+
+        jMenuItem4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jMenuItem4.setText("RESTAURAR BACKUP");
+        jMenu1.add(jMenuItem4);
+
         menuBar.add(jMenu1);
 
-        jMenu2.setText("Sair");
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/iconfinder_Cancel_1493282.png"))); // NOI18N
+        jMenu2.setText("SAIR");
+        jMenu2.setToolTipText("Sair");
+        jMenu2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jMenu2MouseClicked(evt);
@@ -310,10 +352,10 @@ public class FrmPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(desktopPane)
         );
 
-        pack();
+        setSize(new java.awt.Dimension(850, 547));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -429,15 +471,21 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuItem jMenuCadastrarOs;
     private javax.swing.JMenuItem jMenuCadastrarServico;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JToolBar.Separator jSeparator1;
     private javax.swing.JToolBar.Separator jSeparator2;
     private javax.swing.JToolBar.Separator jSeparator3;
     private javax.swing.JToolBar.Separator jSeparator4;
+    private javax.swing.JToolBar.Separator jSeparator5;
     private javax.swing.JToolBar jToolBar1;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem openMenuCadastrarClientes;

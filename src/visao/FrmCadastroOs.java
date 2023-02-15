@@ -520,6 +520,11 @@ public class FrmCadastroOs extends javax.swing.JFrame {
         }
 
         jButtonRemoverServico.setText("Remover Serviço");
+        jButtonRemoverServico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonRemoverServicoActionPerformed(evt);
+            }
+        });
 
         jButtonAddCliente.setText("Adicionar Serviço");
         jButtonAddCliente.addActionListener(new java.awt.event.ActionListener() {
@@ -902,9 +907,15 @@ public class FrmCadastroOs extends javax.swing.JFrame {
     private DefaultTableModel tableModel;
     private ModelServico modelServico;
     private ModelOs modelOs;
+    
     private void jButtonAddClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAddClienteActionPerformed
+    adicionarServico();
 
-//Obtém a tabela para trabalhar nela
+    }//GEN-LAST:event_jButtonAddClienteActionPerformed
+   
+    private void adicionarServico(){
+        
+        //Obtém a tabela para trabalhar nela
         tableModel = (DefaultTableModel) jTableServico.getModel();
         //se a quantidade solicitada for maior que valor em estoque
         Integer id;
@@ -930,8 +941,26 @@ public class FrmCadastroOs extends javax.swing.JFrame {
         //Adiciona a linha de dados na tabela
         tableModel.addRow(dadosTabela);
             somarValorTotalServicos();   
-    }//GEN-LAST:event_jButtonAddClienteActionPerformed
+    }
+    
+    
+    
+    private void removerServico(){
+    
+                                                 
+        try{
+            //Resgato o índice da linha selecionada
+            int row = jTableServico.getSelectedRow();
 
+            //Passo o indice da linha a ser removida
+            tableModel.removeRow(row);
+            
+      
+        }
+        catch(Exception e){}
+        
+                             
+}
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyyy");
 //         modeloOs.setId_os(Integer.parseInt(jTextFieldId.getText()));
@@ -983,6 +1012,11 @@ public class FrmCadastroOs extends javax.swing.JFrame {
     private void jComboBoxSituOrdemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxSituOrdemActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBoxSituOrdemActionPerformed
+
+    private void jButtonRemoverServicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRemoverServicoActionPerformed
+       removerServico();
+       somarValorTotalServicos(); 
+    }//GEN-LAST:event_jButtonRemoverServicoActionPerformed
 private void multiplicarQuantidade() {
 //    double valor = 0;
 //    valor = Double.parseDouble(jTextFieldQuantidade.getText()) *Double.parseDouble(jTextFieldValTot.getText());

@@ -3,13 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Projeto%20SisInfo/SisInfo/src/controle/ControllerDataHora.java</file>
-            <file>file:/C:/Projeto%20SisInfo/SisInfo/src/controle/ControllerServico.java</file>
+            <file>file:/C:/Projeto%20SisInfo/SisInfo/src/visao/FrmBackup.java</file>
             <file>file:/C:/Projeto%20SisInfo/SisInfo/src/visao/FrmCadastroOs.java</file>
+            <file>file:/C:/Projeto%20SisInfo/SisInfo/src/visao/FrmPrincipal.java</file>
+            <file>file:/C:/Projeto%20SisInfo/SisInfo/src/utilitario/PrecoRender.java</file>
             <file>file:/C:/Projeto%20SisInfo/SisInfo/src/visao/FrmCadastroServicos.java</file>
-            <file>file:/C:/Projeto%20SisInfo/SisInfo/src/controle/ControllerOs.java</file>
-            <file>file:/C:/Projeto%20SisInfo/SisInfo/src/visao/FrmConsultarServicos.java</file>
-            <file>file:/C:/Projeto%20SisInfo/SisInfo/src/controle/ControllerCliente.java</file>
         </group>
     </open-files>
 </project-private>
